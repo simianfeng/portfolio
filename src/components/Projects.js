@@ -31,11 +31,14 @@ const Projects=()=>{
             )
         }
         
-    }
+    };
+
+  
+
       
     return(
         <div className='category-tabs'>
-            <Tabs activeTab = {activeTab} onChange={(props)=> SetactiveTab.tabId} ripple>
+            <Tabs activeTab = {activeTab} onChange={(tabId)=>SetactiveTab({tabId})} ripple>
                 <Tab>React</Tab>
                 <Tab>Angular</Tab>
                 <Tab>VueJS</Tab>
