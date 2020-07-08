@@ -9,13 +9,14 @@ const App =()=>{
     <Layout>
         <Header className='header-color' title="Simian Feng" scroll>
             <Navigation>
+                <Link to="/">Home</Link>
                 <Link to="/resume">Resume</Link>
                 <Link to="/aboutme">About Me</Link>
                 <Link to="/contact">Contact</Link>
                 <Link to="/projects">Projects</Link>
             </Navigation>
         </Header>
-        <Drawer title="Title">
+        <Drawer title="Simian Feng">
             <Navigation>
                 <Link to="/resume">Resume</Link>
                 <Link to="/aboutme">About Me</Link>

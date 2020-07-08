@@ -13,22 +13,22 @@ const LandingPage=()=>{
                         <h1> Full Stack Web Developer</h1>
                         <hr/>
                         <p>
-                            HTML/CSS | Boostrap | Javascript | React | Python | SAS | SQL |
+                            HTML/CSS | React | Python | SAS | SQL | Tableau
                         </p>
 
                         <div className="social-link">
                             {/* Linkedin*/}
-                            <a rel="noopener noreferrer" href="http://google.ca" target="_blank">
+                            <a rel="noopener noreferrer" href="https://linkedin.com/in/simonfeng-a8a3b6187" target="_blank">
                                 <i className="fa fa-linkedin-square" aria-hidden="true"/>
                             </a>
 
                             {/* Github*/}
-                            <a rel="noopener noreferrer" href="http://google.ca" target="_blank">
+                            <a rel="noopener noreferrer" href="https://github.com/simianfeng" target="_blank">
                                 <i className="fa fa-github-square" aria-hidden="true"/>
                             </a>
 
                             {/*Youtube*/}
-                            <a rel="noopener noreferrer" href="http://google.ca" target="_blank">
+                            <a rel="noopener noreferrer" href="http://youtube.ca" target="_blank">
                                 <i className="fa fa-youtube-square" aria-hidden="true"/>
                             </a>
 

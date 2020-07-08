@@ -1,32 +1,78 @@
 import React,{Component, useState} from 'react';
-import {Tabs, Tab} from 'react-mdl';
+import {Tabs, Tab,Grid,Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton} from 'react-mdl';
 
 const Projects=()=>{
     const [activeTab, SetactiveTab] = useState(0);
 
-    const toggleCategories=()=>{
+    const toggleCategories=(event)=>{
          if (activeTab===0){
             return(
-               <div>
-                   <h1>This is React</h1>
+               <div className='projects-grid'>
+                   <Card shadow={5} style={{minWidth:'450', margin:"auto"}}>
+                       <CardTitle style={{color:'#fff', height:'176px', background:'url(https://planetjon.ca/wp-content/uploads/2019/09/react-logo.png) center/cover'}}>
+                           Project #1
+                        </CardTitle>
+                        <CardText>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris sagittis pellentesque lacus eleifend lacinia...
+                        </CardText>
+                        <CardActions border>
+                           <Button colored>Github</Button>
+                        </CardActions>
+                        <CardMenu style={{color:"#fff"}}>
+                            <IconButton name='share'/>
+                        </CardMenu>
+                   </Card>
+
+                   <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
+                       <CardTitle style={{color:'#fff', height:'176px', background:'url(https://planetjon.ca/wp-content/uploads/2019/09/react-logo.png) center/cover'}}>
+                           Project #2
+                        </CardTitle>
+                        <CardText>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris sagittis pellentesque lacus eleifend lacinia...
+                        </CardText>
+                        <CardActions border>
+                           <Button colored>Github</Button>
+                        </CardActions>
+                        <CardMenu style={{color:"#fff"}}>
+                            <IconButton name='share'/>
+                        </CardMenu>
+                   </Card>
+
+                   <Card shadow={5} style={{minWidth:'450', margin:"auto"}}>
+                       <CardTitle style={{color:'#fff', height:'176px', background:'url(https://planetjon.ca/wp-content/uploads/2019/09/react-logo.png) center/cover'}}>
+                           Project #3
+                        </CardTitle>
+                        <CardText>
+                               Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris sagittis pellentesque lacus eleifend lacinia...
+                        </CardText>
+                        <CardActions border>
+                           <Button colored>Github</Button>
+                        </CardActions>
+                        <CardMenu style={{color:"#fff"}}>
+                            <IconButton name='share'/>
+                        </CardMenu>
+                   </Card>
                </div>
             )
-        } else if (activeTab===1){
+        }
+         else if (activeTab===1){
             return(
             <div>
-                <h1>This is Angular</h1>
+                <h1>This is Python</h1>
             </div>
             )
-        } else if (activeTab===2){
+        } 
+        else if (activeTab===2){
             return(
             <div>
-                <h1>This is VueJS</h1>
+                <h1>This is SAS/SQL</h1>
             </div>
             )
-        } else if (activeTab===3){
+        } 
+        else if (activeTab===3){
             return(
             <div>
-                <h1>This is MongoDB</h1>
+                <h1>This is Tableau</h1>
             </div>
             )
         }
@@ -38,16 +84,20 @@ const Projects=()=>{
       
     return(
         <div className='category-tabs'>
-            <Tabs activeTab = {activeTab} onChange={(tabId)=>SetactiveTab({tabId})} ripple>
+            <Tabs activeTab = {activeTab} onChange={(tabId)=>SetactiveTab(tabId)} ripple>
                 <Tab>React</Tab>
-                <Tab>Angular</Tab>
-                <Tab>VueJS</Tab>
-                <Tab>MongoDB</Tab>
+                <Tab>Python</Tab>
+                <Tab>SAS/SQL</Tab>
+                <Tab>Tableau</Tab>
             </Tabs>
 
-            <section className='project-grid'>
-                {toggleCategories()}
-            </section>
+            <Grid>
+                <Cell col={12}>
+                    <div className='content'>
+                    {toggleCategories()}
+                    </div>
+                </Cell>
+            </Grid>
         </div>
     )
 }
