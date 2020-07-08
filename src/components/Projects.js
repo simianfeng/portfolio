@@ -8,15 +8,17 @@ const Projects=()=>{
          if (activeTab===0){
             return(
                <div className='projects-grid'>
-                   <Card shadow={5} style={{minWidth:'450', margin:"auto"}}>
+                   <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
                        <CardTitle style={{color:'#fff', height:'176px', background:'url(https://planetjon.ca/wp-content/uploads/2019/09/react-logo.png) center/cover'}}>
-                           Project #1
+                           The portfolio website
                         </CardTitle>
                         <CardText>
-                               Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris sagittis pellentesque lacus eleifend lacinia...
+                               Welcome to my github. This is the source codes of this portfolio website. 
                         </CardText>
                         <CardActions border>
+                        <a href="https://github.com/simianfeng/portfolio">
                            <Button colored>Github</Button>
+                        </a>
                         </CardActions>
                         <CardMenu style={{color:"#fff"}}>
                             <IconButton name='share'/>
@@ -25,10 +27,10 @@ const Projects=()=>{
 
                    <Card shadow={5} style={{minWidth:'450', margin:'auto'}}>
                        <CardTitle style={{color:'#fff', height:'176px', background:'url(https://planetjon.ca/wp-content/uploads/2019/09/react-logo.png) center/cover'}}>
-                           Project #2
+                           To-do list
                         </CardTitle>
                         <CardText>
-                               Lorem ipsum dolor sit amet, consectetur adipiscing elit.Mauris sagittis pellentesque lacus eleifend lacinia...
+                               This is a simple to-do list project. you can add or delete a thing that you are about to do.
                         </CardText>
                         <CardActions border>
                            <Button colored>Github</Button>
